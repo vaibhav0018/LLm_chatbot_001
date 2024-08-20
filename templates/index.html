@@ -34,7 +34,7 @@
 <body>
     <div class="chat-container">
         <div class="chat-box d-flex flex-column" id="chat-box">
-            <!-- Messages will be appended here -->
+            {# Messages will be appended here #}
         </div>
         <div class="input-group mt-3">
             <input type="text" id="message-input" class="form-control" placeholder="Type your message...">
@@ -45,6 +45,15 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const messageInput = document.getElementById('message-input');
+            messageInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        });
+
         async function sendMessage() {
             const messageInput = document.getElementById('message-input');
             const messageText = messageInput.value;

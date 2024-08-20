@@ -2,8 +2,9 @@ Question,Answer
 Procedure,"Step 1: Obtain the URL from your system administrator
 Step 2: Open any browser
 Step 3: Ensure that your internet is connected
-Step 4: Type in the URL and press enter"
-Logging in,"Step 1: The screen below shows the login screen that should appear as soon as you enter the URL and press Enter key
+Step 4: Type in the URL and press enter
+Step 5: You see big screen in front of you"
+how to Logging in,"Step 1: The screen below shows the login screen that should appear as soon as you enter the URL and press Enter key
 Step 2: Please obtain your login credentials from the system administrator and type in the same in this screen."
 User Name in the Dashboard,"Step 1: The Dashboard screen will appear if your login is successful
 Step 2: It should display the login user name as circled in red in the image below"
@@ -29,14 +30,14 @@ Step 6: Under ACCOUNTS there will be more options listed select CHEQUE ENTRY fro
 General Navigation Menu,"Step 1: On the left side of the screen you will find an icon with 3 horizontal lines at all times while using the ERP software. This is circled in RED in the image
 Step 2: If you click on this icon using your mouse you will open the menu on the left side of the screen as shown below
 Step 3: On the left you see the options for the following:
-a.ENTRIES - user can enter data / information into the system
-b.PRINTING - used for printing of invoices and other documents
-c.QUERY - used to find information such as the stock level of any item
-d.FOLLOWUP - gives you access to the information about the aging bills and helps the follow up of mostly payments
-e.REPORTS - printing various reports
-f.MASTERS - all data is handled from a set of masters to have uniformity throughout the system
-g.MISCELLANEOUS - mostly used for administrative functions - contains access information, user profile, etc.
-h.ORDER MENU - helps you manage the purchases, such as placing an order, modify an order, etc.
+    a.ENTRIES - user can enter data / information into the system
+    b.PRINTING - used for printing of invoices and other documents
+    c.QUERY - used to find information such as the stock level of any item
+    d.FOLLOWUP - gives you access to the information about the aging bills and helps the follow up of mostly payments
+    e.REPORTS - printing various reports
+    f.MASTERS - all data is handled from a set of masters to have uniformity throughout the system
+    g.MISCELLANEOUS - mostly used for administrative functions - contains access information, user profile, etc.
+    h.ORDER MENU - helps you manage the purchases, such as placing an order, modify an order, etc.
 Step 4: Each of these actions will help the user execute a specific function as described
 Step 5: The details described above are common to all users and their login credentials. However, the detailed displayed and the permitted actions may be different depending upon the user rights."
 coffee,"Step 1: Take some water
@@ -53,3 +54,194 @@ Step 2: Click on 'Forgot Password'
 Step 3: Enter your registered email address
 Step 4: Check your email for the password reset link
 Step 5: Click on the link and follow the instructions to reset your password"
+how are you,"Step 1: hii iam fine 
+Step 2: hii iam not fine"
+open navigation menu,"Step 1: Click on the icon marked in RED using your mouse. 
+Step 2: The menu will open on the left side of the screen."
+navigation menu options,"The navigation menu on the left side of the screen includes the following options:
+Step1: **ENTRIES** - User can enter data/information into the system.
+Step2: **PRINTING** - Used for printing invoices and other documents.
+Step3: **QUERY** - Used to find information such as the stock level of any item.
+Step4: **FOLLOWUP** - Access information about ageing bills and helps follow up on payments.
+Step5: **REPORTS** - Printing various reports.
+Step6: **MASTERS** - All data is handled from a set of masters to ensure uniformity throughout the system.
+Step7: **MISCELLANEOUS** - Mostly used for administrative functions - contains access information, user profiles, etc.
+Step8: **ORDER MENU** - Helps manage purchases, such as placing an order, modifying an order, etc."
+sales order processing,"The three steps in sales order preparation and order processing are:
+Step 1: Preparation of an AO (Acceptance Order).
+Step 2: Approval of an AO (Credit risk management).
+Step 3: Preparation of a Challan (Dispatch of goods)."
+acceptance order explanation,"An AO (Acceptance Order) marks the commencement of order processing. It may contain just one item or a number of items."
+steps in Sales order preparation and order processing ,"Step1: Preparation of an AO ( Acceptance Order )
+Step2: Approval of an AO (Credit risk management)
+step3: Preparation of a Challan (Dispatch of goods)"
+Preparing an AO,"Step1: For creating an AO go to ENTRIES ? AO. The below page would open
+Step2: This page displays two tabs COMPLETED and PENDING DRAFT.
+Step3: Pending Draft refers to AOs are awaiting approval by the authorized person
+Step4: To view the pending draft AOs click on the PENDING DRAFT tab and a list of all the AOs awaiting approval will be displayed
+Step5: To view the completed AOs pending delivery, click on the COMPLETED tab. A list of completed AOs will be displayed
+Step6: Completed AOs are approved by the authorized person pending delivery
+Step7: You may also locate an AO prepared earlier by clicking on the advance search bar. Fill AO no and choose a financial year. You will see the below screen
+Step8:There is a filter field on the left side of the   CREATE NEW AO   button. This field is used to filter the AOs when you are viewing AOs.
+Step9: If you type in any digits or alphabets the list will be filtered according to the text and only the line items containing the filter test will be displayed."
+new ao,"Step 1: For creating a new AO click on CREATE NEW AO. AO screen opens.
+Step 2: Fill in all details.
+Step 3: You may search by typing in 4 or more letters of the party name and hit the Enter key.
+Step 4: In AO source you get three options (choose 1):
+    a.Fresh AO: For preparing a fresh sales order.
+    b.From Order Request: Order received from other sources (if applicable).
+    c.From Quotation: When an order is received based on a quotation by sales.
+Step 5: AO type (choose 1):
+    a. Direct Despatch: The manufacturer directly delivers the goods to the customer on behalf of the supplier.
+    b. Direct inward: These are similar to stock orders but specific to a customer and may be odd size or specific color or large quantities.
+    c. Stock: Sale of material available in the godown and it must be dispatched to the customer.
+Step 6: When you enter the party name automatically all details will appear. Details are picked up from the customer master by the software.
+Step 7: All customers must be present in the customer master. A new client has to be first entered in the customer master. If the data does not appear in the customer master, the system will not allow you to prepare an AO.
+Step 8: After filling in all details click on SUBMIT.
+Step 9: Add items as per customer order.
+Step 10: Item search with item code, catref no, item description, etc.
+Step 11: For adding more items click on (+) on the far right."
+how to Add item in bulk,"Step1: For adding the same type of item in bulk click on the (+) in your LHS besides ADD ITEM and the below window open.
+Step2: Click on Show Details you get below screen
+Step3: Click on NORMAL
+step4: Add quantity and click on the    ADD    button. 
+Step5: select godwon
+Step6: type earlist due date
+Step7: type letest due date
+Step8: if you want to edit
+    a.You can edit or delete the items using the edit & delete option in the select box.
+    b.For deleting a line item click on the trash can icon         
+    c.For editing a line item click on the pencil icon    
+Step8: 4.Click on   COMPLETE DRAFT    below screen will open"
+AO other information customer,"Step1: Fill all details given by the customer.
+    a. Party order reference - Verbal order, Web order, whatsapp order, purchase order etc.
+    b. In address details choose city, contact name , mobile no and transporter name.
+    c.Then select the booking instruction. 
+Step2: Click on   COMPLETE AO    and the stoppage page will be open. Only authorised persons can clear a stoppage. "
+how to clear stoppage,"Step1: Click on   COMPLETE AO    and the stoppage page will be open. Only authorised persons can clear a stoppage.
+Step2:An authorised person needs to login on his user ID and open the pending draft AO list
+Step3: Tick on the check box at the far right on the CLEAR column
+Step4: At the bottom of the screen you will see the following buttons
+    a.CLEAR ALL - All the stoppages will be cleared if you hit this button
+    b.CLEAR RATE STOPPAGE  - Only rate related stoppages will be cleared if you hit this button
+    c.CLEAR STOCK STOPPAGE  - Only stock availability related stoppages will be cleared if you hit this button
+    d.CLEAR PARTY STOPPAGE. - Only party related or party credit position
+Step5:  For completing the AO procedure you need to authorise the AO. 
+Step6: The authorisation of the AO will depend upon the rights of the user
+Step7: Go to the Entries - AO - click on   VIEW LATEST AO    .
+Step8: The below screen should show
+Step9: Click on the pencil icon on the far right in the select column. The below screen will open
+step10: Select the empty box in your RHS then click on    AUTHORISE   . AO procedure completed"
+Deleting an AO,"Step1: To delete an AO, follow these steps:
+    a.Go to the 'Entries' tab.
+    b.Select 'AO' from the menu. Below screen below will open.
+Step2:  Click on    VIEW LATEST AO    or use the 'Advance Search' option.
+Step3: Enter the AO number or party name, then click on     SEARCH . 
+Step4: However, please note that if a challan has been created against the AO, there is a specific condition to follow:
+    a.First, delete the challan associated with the AO.
+    b.Then, unauthorised AO.
+    c.For Unauthorise the AO click Pencil icon     
+step5: Select a box and click on    UNAUTHORISE    
+Step6: Use pencil icon  for edit and delete icon    for delete an AO.
+Step7: Finally, you can proceed to delete or edit the AO"
+create challan,"Step1:  After completing AO approval procedure creating challan against same AO. 
+Step2: For creating a challan, select ENTRIES ? CHALLAN. Below screen will open
+Step3: Page contains COMPLETE CHALLAN, PENDING CHALLAN and FINAL PROCESS tabs.
+Step4: This screen also has    ADD CHALLAN     and    SHOW    button
+Step5: For creating a new challan click on    ADD CHALLAN   . Below window open
+Step6: To search with customer name or account code type in 4 or more starting letters of the customer name. Click on the search icon          . 
+step7:All AOs will be displayed as shown in the below screen. 
+Step8: Click on the relevant AO no the    AO NO    column and the below screen will open
+Step9: Click on the first option in the selection box i.e. show stock to add. Below screen will open
+Step10: Click on    ADD SELECTED CARDS     for adding quantity. After adding quantity click on complete.
+Step11: After clicking on    COMPLETE    the below screen will open .
+Step12: All information filled while creating an AO will be displayed at the time of creating challan.
+Step13: In Challan when payment is advanced enter Cheque no , bank name then click on     ___COMPLETE    .
+Step14:Clear all stoppage from an authorised person. Stoppages like Rate Stoppage, Payment stoppage, credit limit stoppage.  
+    a.CLEAR ALL - All the stoppages will be cleared if you hit this button
+    b.CLEAR PAYMENT STOPPAGE - Only payment related stoppages will be cleared if you hit this button
+    c.CLEAR PARTY STOPPAGE. - Only party related or party credit position related stoppages will be cleared if you hit this button
+Step15: All details and stoppage clear below screen open."
+Procedure for deleting or editing a Challan,"Step1: To delete or edit a Challan, follow these steps:
+    a.Go to 'Entries' and select 'Challan.' The screen will open.
+    b.Click on 'Advance Search' and enter the Challan number or Party name, then click on   SEARCH   
+    c.After clicking on SEARCH the Challan will be displayed on the screen.
+    d.Click on the pencil icon to edit, located next to the Challan no.
+    e.To delete the Challan, click on the delete icon located next to the Header Details."
+final process,"Step1: Last step is Final process. Using this process, bills go by email to party.
+Step2: For final process, ENTRIES ? CHALLAN ? click on FINAL PROCESS tab
+step3: Locate the AO No. for which you want to do the final process
+Step4: You may need to scroll the page to find it
+Step5: After you locate the correct AO / Challan use the horizontal slide bar to go to the extreme right. 
+Step6: The last column of the list bearing the heading   SELECT   shows 3 icons for each line item
+Step7: These icons are 
+    a.Cloud icon is used to upload
+    b.User edit option
+    c.Viewing the details of the Challan 
+Step8: Click on the first option in select i.e. upload.
+Step9: On clicking on the  cloud icon the  below screen will open
+Step10: From the drop down menu select the document that you are uploading.
+Step11: The choices are DELIVERY ORDER, E-WAY BILL, INTERNAL ORDER, INVOICE, LORRY RECEIPT, PURCHASE ORDER or OTHERS
+Step12: Choose the document that you are going to upload correctly  from the menu
+Step13: Then select the correct file using the    Choose File     button
+Step14: After choosing, click on    UPLOAD    
+Step15: After the file is uploaded click on the final process form icon
+Step16: THis would open the FINAL PROCESS FORM as shown below
+Step17: Fill in all the information and click on    PROCEED   .
+Step18: You will see a message on screen � MAIL SENT SUCCESSFULLY �.
+Step19: The Sale order process is complete after completing the FINAL PROCESS.
+Step20:The successful completion of the final process is essential
+Step21: After completing Final proces?s bill amount show in party ledger.
+Step22: During the process of completing the final process form, you may be prompted with messages such as UPLOAD THE SIGNED ORDER or UPLOAD THE LORRY RECEIPT. These are important messages that take care of all the compliance and the documentation requirements for fulfilling an order. You cannot skip these prompts and need to upload the necessary documents as requested. This is an interlock within the software that ensures that the proper procedures are followed for the sale and the compliance requirements are not circumvented on most occasions."
+how to make pizza,"Step1: go to shop
+Step2: get dough
+Step3: get pepparoni
+    a.get beens
+    b.get sauce
+    c.chilly
+    d.tomato
+Step4: no pizza sorry"
+Creating a New PO,"Step1. Only authorised members of the team will have the rights for preparation of PO.
+Step2. For creating a Purchase Order (PO) click on ENTRIES then click on PO you will see home page of PO
+Step3. There are COMPLETED and PENDING DRAFTS tabs
+Step4. If you click on the COMPLETED tab you can view completed POs
+Step5. If you click on the PENDING DRAFTS tab you can view the POs awaiting approval
+Step6. When the page opens, you will also see    CREATE NEW PO    button
+Step7. The   CREATE NEW PO    button can be used to create a new PO
+Step8. A new PO can be created but an order may be placed only after it is authorised
+Step9. For creating a new Purchase Order click on   CREATE NEW PO  
+Step10. You may search for a supplier by typing in 4 or more letters of the supplier name in the search field and click on the lens icon
+Step11. On Selecting the supplier name, supplier address, GST No. will be picked up automatically from the master.
+Step12. Fill in the mandatory information as per the information on the screen
+Step13. When the supplier information is available in the Master, it will appear on the screen
+Step14.If any purchases need to be made from a new Supplier, the supplier details have to be entered in the master before you attempt to make a PO. 
+Step15. System will not allow you to prepare a PO if the supplier�s name is not available in the Master
+Step16. Most of the information requested carry labels on the left hand side that are self explanatory
+Step17. Some of the terms that are not self explanatory are explained below:.
+         a. SPA FLAG : Refers to applicability of special pricing for the order. For e.g.; when the original price of the product is Rs. 100 but the manufacturer offers it at a special price at Rs. 98 this one time, we need to use the SPA flag. In most cases this will �NO�
+         b. POLICY FLAG : Supplier given special discount to the distributor
+         c. Not to pay flag : Supplier can give an item for free, so entry may not be made in the Stock receipt. 
+         d. PRICE RULING AT THE TIME OF DELIVERY (PRD) :  Sometimes the price of an item may change before the delivery. In such cases you need to use this flag. This option is used in case the manufacturer requires that the price prevailing at the time of delivery will be applicable.
+         e. Choose the delivery location 
+Step18. In the �SELECT DELIVERY TO� you have 3 options:
+          a. GODOWN (STOCK): Choose this in case you want to received this material in your warehouse / Godown
+          b. CUSTOMER (DIRECT DISPATCH): Choose this option in case you want the manufacturer to deliver the goods to the client or site directly
+          c. DIRECT INWARD: Choose this option in case you want to reserve this material for a specific order
+Step19. The subsequent information required in terms of the location for delivery will change according to the choice in #18 above
+Step20. Fill details like, Supplier Name or Party code then click on the lens icon
+Step21. After entering, the party name or code, address will appear directly through the Master. 
+Step22. Choose Flag then select delivery location and click on   PROCEED .
+Step23. When you click on   PROCEED   
+Step24. Add items as per your requirement.
+Step25. Item codes can be searched by typing in part description of the product (at least 4 letters) or item code or catref no or item description in the    ITEM CODE    column and using the search icon
+Step26. To search for an item type in part description of the product (at least 4 letters) or item code or catref no or item description and hit the lens icon
+Step27. A drop down list of all items matching the description will appear
+Step28. From the drop down menu select the correct item that you want to add to the order
+Step29. Since there may be multiple items with very similar descriptions, you need to carefully check the entire description or you may also refer to the unique product code
+Step30. For adding more items click on (+) in the    SELECT    column
+Step31. Continue this process till you have finished entering all the items you want to order in this PO.
+Step32. In order to make changes to the line items, click on the selection box on the far right. A tick mark will appear and the box will turn red. 
+Step33. Then Click on the pencil icon  and you will be able to edit the line item.
+Step34. When finished adding items, click on   PROCEED   .
+Step35. Fill in all the details and click on   COMPLETE PO  .
+Step36. When you click on   COMPLETE PO  , sometimes a stoppage menu will show"

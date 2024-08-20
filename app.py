@@ -69,22 +69,64 @@ def custom_retrieval(question, documents, threshold=80):
         return answer
     return "No relevant context found. Call customer care. This is contact 12452435."'''
 
+# def generate_step_by_step_answer(question, context):
+#     if context:
+#         # Split context into steps if applicable
+#         context_parts = context.page_content.split(' A: ')[1].strip().split('\n')
+#         # Clean up the context parts to remove any existing numbering and extra whitespace
+#         cleaned_steps = []
+#         for part in context_parts:
+#             # Remove the existing "Step X:" part if present
+#             if part.strip().lower().startswith('step'):
+#                 part = part.split(':', 1)[1].strip()
+#             cleaned_steps.append(part)
+        
+#         # Prepend the correct step numbers
+#         steps = [f"Step {i + 1}: {part}" for i, part in enumerate(cleaned_steps)]
+#         answer = "<br>".join(steps)  # Use HTML <br> for line breaks
+#         return answer
+#     return "No relevant context found. Call customer care. This is contact 12452435."
+
+import re
+
 def generate_step_by_step_answer(question, context):
     if context:
-        # Split context into steps if applicable
-        context_parts = context.page_content.split(' A: ')[1].strip().split('\n')
-        # Clean up the context parts to remove any existing numbering and extra whitespace
-        cleaned_steps = []
-        for part in context_parts:
-            # Remove the existing "Step X:" part if present
-            if part.strip().lower().startswith('step'):
-                part = part.split(':', 1)[1].strip()
-            cleaned_steps.append(part)
+        # Split context into parts based on 'Step' keyword
+        context_parts = context.page_content.split('Step')[1:]
+
+        formatted_steps = []
+        for index, part in enumerate(context_parts):
+            part = part.strip()
+            if part:
+                # Separate the main step and any potential sub-steps
+                split_parts = part.split('\n')
+                main_step = split_parts[0].strip()
+                sub_steps = split_parts[1:]
+
+                # Format the main step (preserve original numbering)
+                formatted_main_step = f"Step {main_step}"
+
+                # Format sub-steps with proper indentation
+                formatted_sub_steps = []
+                for sub_step in sub_steps:
+                    sub_step = sub_step.strip()
+                    if sub_step:
+                        # Check if the sub-step starts with a lettered list
+                        if sub_step[0].lower() in ['a', 'b', 'c', 'd', 'e', 'f', 'g'] and sub_step[1] == '.':
+                            formatted_sub_steps.append(f"&nbsp;&nbsp;&nbsp;&nbsp;{sub_step}")
+                        else:
+                            formatted_sub_steps.append(f"&nbsp;&nbsp;&nbsp;&nbsp;{sub_step}")
+
+                # Combine the main step with its sub-steps
+                if formatted_sub_steps:
+                    formatted_steps.append(formatted_main_step + "<br>" + "<br>".join(formatted_sub_steps))
+                else:
+                    formatted_steps.append(formatted_main_step)
         
-        # Prepend the correct step numbers
-        steps = [f"Step {i + 1}: {part}" for i, part in enumerate(cleaned_steps)]
-        answer = "<br>".join(steps)  # Use HTML <br> for line breaks
+        # Combine all steps into a single HTML string
+        answer = "<br>".join(formatted_steps)
         return answer
+    
     return "No relevant context found. Call customer care. This is contact 12452435."
 
 
@@ -134,4 +176,3 @@ def api():
 
 if __name__ == '__main__':
     app.run(debug=True)
- 
