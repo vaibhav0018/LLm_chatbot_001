@@ -29,6 +29,11 @@
         .message.response {
             background-color: #d1d1ff;
         }
+        .read-more {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -73,11 +78,44 @@
 
             const responseData = await response.json();
 
-            // Display the response message
-            appendMessage('response', responseData.message);
+            // Display the response message with "Read More" option if applicable
+            let responseMessage = responseData.message;
+            if (responseMessage.includes('Step')) {
+                responseMessage += ' <span class="read-more" onclick="readMore()">Read More</span>';
+            }
+            appendMessage('response', responseMessage);
 
             // Clear the input
             messageInput.value = '';
+        }
+
+        async function readMore() {
+            const response = await fetch('/api/read_more', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            const responseData = await response.json();
+
+            // Find the last response message with the Read More link and append the new content to it
+            const chatBox = document.getElementById('chat-box');
+            const lastResponse = chatBox.querySelector('.message.response:last-child');
+            if (lastResponse) {
+                // Remove the "Read More" link if it's there
+                const readMoreLink = lastResponse.querySelector('.read-more');
+                if (readMoreLink) {
+                    readMoreLink.remove();
+                }
+
+                // Append the new content and add the "Read More" link if applicable
+                let newContent = responseData.message;
+                if (newContent.includes('Step')) {
+                    newContent += ' <span class="read-more" onclick="readMore()">Read More</span>';
+                }
+                lastResponse.innerHTML += ` ${newContent}`;
+            }
         }
 
         function appendMessage(sender, message) {
