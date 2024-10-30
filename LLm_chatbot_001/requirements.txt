@@ -1,0 +1,12 @@
+Flask
+pandas
+chroma
+langchain_huggingface
+langchain.text_splitter
+langchain_community
+langchain.chains
+langchain
+fuzzywuzzy
+os
+APSCheduler
+scheduler
